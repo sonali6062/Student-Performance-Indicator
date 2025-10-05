@@ -225,12 +225,11 @@ Then open your browser and navigate to:
 
 ---
 
-## 🌠 Summary for Recruiters
-
-> 🔹 Developed a complete **regression-based ML pipeline** from scratch
-> 🔹 Achieved **87.77% R² Score** with **Gradient Boosting**
-> 🔹 Implemented **hyperparameter tuning** for 7 models
-> 🔹 Built with **Flask**, **scikit-learn**, **XGBoost**, and **CatBoost**
-> 🔹 Demonstrates **real-world ML engineering workflow** (data → model → deployment)
+## 🌠 Summary 
+🔹 Developed a complete **regression-based ML pipeline** from scratch
+🔹 Achieved **87.77% R² Score** with **Gradient Boosting**
+🔹 Implemented **hyperparameter tuning** for 7 models
+🔹 Built with **Flask**, **scikit-learn**, **XGBoost**, and **CatBoost**
+🔹 Demonstrates **real-world ML engineering workflow** (data → model → deployment)
 
 
