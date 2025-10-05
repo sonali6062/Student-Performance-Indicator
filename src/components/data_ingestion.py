@@ -10,7 +10,8 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 @dataclass
 class DataIngestionConfig:
     """Configuration class for storing file paths."""
@@ -27,14 +28,14 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component")
 
         try:
-            # ✅ Corrected file path (use forward slashes or raw string for Windows)
+            # Corrected file path (use forward slashes or raw string for Windows)
             df = pd.read_csv(r'notebook\data\stud.csv')
             logging.info('Read the dataset as dataframe')
 
-            # ✅ Ensure directory exists before writing
+            # Ensure directory exists before writing
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
 
-            # ✅ Save raw data before splitting
+            # Save raw data before splitting
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
 
             logging.info("Train test split initiated")
@@ -57,4 +58,6 @@ class DataIngestion:
 
 if __name__ == "__main__":
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data,test_data=obj.initiate_data_ingestion()
+    data_transformation=DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
