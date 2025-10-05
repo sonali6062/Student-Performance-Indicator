@@ -15,10 +15,15 @@ This project aims to predict student performance scores based on various demogra
 The goal of this project is to build a complete end-to-end Machine Learning pipeline — from data ingestion and transformation to model training, evaluation, and deployment — for predicting student performance.
 
 🌟 Project Highlights
+
 🔹 Built a complete end-to-end Machine Learning pipeline
+
 🔹 Achieved R² Score of 87.77% using Gradient Boosting Regressor
+
 🔹 Implemented 7 regression algorithms with GridSearchCV for hyperparameter tuning
+
 🔹 Designed a Flask-based API for predictions
+
 🔹 Fully modularized project with robust logging, exception handling, and artifact management
 
 
@@ -200,8 +205,11 @@ Then open your browser and navigate to:
 ## 🧩 Key Learnings
 
 * Building modular ML pipelines for reusability
+  
 * Performing hyperparameter tuning effectively using GridSearchCV
+  
 * Understanding bias-variance tradeoff in regression models
+  
 * Saving and loading ML artifacts for deployment
 
 ---
@@ -209,8 +217,11 @@ Then open your browser and navigate to:
 ## 🛠️ Future Enhancements
 
 * 📊 Add **feature importance** visualization
+* 
 * 🧾 Integrate **MLflow** for experiment tracking
+* 
 * 🌐 Build **Streamlit UI** for user-friendly predictions
+* 
 * ⚙️ Deploy on **Render / AWS EC2**
 
 ---
@@ -226,10 +237,15 @@ Then open your browser and navigate to:
 ---
 
 ## 🌠 Summary 
+
 🔹 Developed a complete **regression-based ML pipeline** from scratch
+
 🔹 Achieved **87.77% R² Score** with **Gradient Boosting**
+
 🔹 Implemented **hyperparameter tuning** for 7 models
+
 🔹 Built with **Flask**, **scikit-learn**, **XGBoost**, and **CatBoost**
+
 🔹 Demonstrates **real-world ML engineering workflow** (data → model → deployment)
 
 
